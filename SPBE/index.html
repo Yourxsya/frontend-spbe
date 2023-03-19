@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <title>Sistem Informasi Manajemen Pengetahuan</title>
   <meta content="" name="description">
@@ -235,57 +236,104 @@
           <h2>Kritik & Saran</h2>
           <p>Sampaikan umpan balik kepada kami</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Lokasi:</h4>
-                <p>
-                  Jl. Ir. H. Juanda No.10,
-                  RT.01/RW.01, Pabaton, Kecamatan Bogor Tengah,
-                  Kota Bogor
-                </p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>kominfo@kotabogor.go.id</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Telepon:</h4>
-                <p>+62 251 - 8321075</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email Anda" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Saran & Kritik" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center">
-                <button type="submit">Kirim</button>
-              </div>
-            </form>
-          </div>
+        <div class="container featured-area-default padding-30">
+          <div class="row">           
+             <div class="col-md-8 padding-20">
+                  <div class="row">
+                      <!-- Saran dan kritik  -->
+                      <div class="panel panel-default">
+                          <div id="headingsaran" class="article-heading">
+                              <i class="fa fa-lightbulb-o"></i> 
+                              Saran & Kritik
+                          </div>
+                          <hr class="style-three">
+                          <!-- LEAVE A REPLY SECTION -->
+                          <div class="panel-transparent">
+                              <form action="https://mp-spbe.polmankab.go.id/Sarankritik/submitsaran" method="post" class="comment-form">
+                                  <div class="form-group" col-md-4>
+                                      <label>Nama</label>
+                                      <input required type="text" name="nama" class="form-control" value="">
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Kontak</label>
+                                      <input required type="text" name="kontak" class="form-control" value="">
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Saran & Kritik</label>
+                                      <textarea name="saran" class="form-control" rows="3"></textarea>
+                                  </div>
+                                  <div class="g-recaptcha" data-sitekey="6LcheTkbAAAAABCTElVqBC7bJ_2e_i4Cm37zWjEv"></div>
+                                  <br>
+                                  <button type="submit" value="Submit" class="btn btn-wide btn-primary">Kirim</button>
+                              </form>
+                          </div>
+                          <!-- END LEAVE A REPLY SECTION -->
+                                                  <hr id="batassaran" class="style-three">
+                          <!-- FIRST LEVEL -->
+                                                  <!-- END FIRST LEVEL  -->
+                      </div>
+                      <!-- saran dan kritik -->
+                      <nav class="text-center">
+                                              </nav>
+                  </div>
+  
+              </div><!-- SIDEBAR STUFF -->
+  <div class="col-md-4 padding-20">
+  
+      <!-- ARTICLE CATEGORIES SECTION -->
+  
+                    <div id="accordion">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Saya sudah mendaftar, tapi kenapa belum bisa login?
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                            Untuk pendaftaran pengguna, silahkan mengisi formulir pendaftaran, kemudian menghubungi admin untuk verifikasi dan aktivasi
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              Saya tidak menemukan artikel yang saya inginkan
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body">
+                            Sistem manajemen pengetahuan merupakan wadah bagi kontributor untuk berbagi ilmu dan wawasan, jika anda belum menemukan artikel yang anda cari, silahkan kirim tentang artikel yang anda inginkan melalui saran dan kritik.
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                              Saya ingin ikut berdiskusi membahas artikel, bagaimana caranya?
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                            Silahkan mendaftar terlebih dahulu, jika sudah silahkan login untuk ikut berdiskusi.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  <!-- END ARTICLES CATEOGIRES SECTION -->
+  
+  </div>
+  <!-- END SIDEBAR STUFF -->
+  
+        
         </div>
       </div>
     </section>
