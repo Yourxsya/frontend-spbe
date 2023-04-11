@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 
   <title>Sistem Informasi Manajemen Pengetahuan</title>
   <meta content="" name="description">
@@ -242,33 +242,33 @@
                   <div class="row">
                       <!-- Saran dan kritik  -->
                       <div class="panel panel-default">
-                          <div id="headingsaran" class="article-heading">
-                              <i class="fa fa-lightbulb-o"></i> 
-                              Saran & Kritik
-                          </div>
-                          <hr class="style-three">
+
                           <!-- LEAVE A REPLY SECTION -->
-                          <div class="panel-transparent">
-                              <form action="https://mp-spbe.polmankab.go.id/Sarankritik/submitsaran" method="post" class="comment-form">
+                          <div class="panel-transparent" data-aos="fade-right">
+                              <form action="" method="post" class="comment-form">
                                   <div class="form-group" col-md-4>
-                                      <label>Nama</label>
+                                      <label><strong>Nama</strong></label>
                                       <input required type="text" name="nama" class="form-control" value="">
                                   </div>
+                                  &nbsp
                                   <div class="form-group">
-                                      <label>Kontak</label>
-                                      <input required type="text" name="kontak" class="form-control" value="">
+                                      <label><strong>Email</strong></label>
+                                      <input required type="email" name="email" class="form-control" value="">
                                   </div>
+                                  &nbsp
                                   <div class="form-group">
-                                      <label>Saran & Kritik</label>
+                                      <label> <strong>Saran & Kritik</strong></label>
                                       <textarea name="saran" class="form-control" rows="3"></textarea>
                                   </div>
-                                  <div class="g-recaptcha" data-sitekey="6LcheTkbAAAAABCTElVqBC7bJ_2e_i4Cm37zWjEv"></div>
+                                  &nbsp
+                                  <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+                                  </div>
                                   <br>
                                   <button type="submit" value="Submit" class="btn btn-wide btn-primary">Kirim</button>
                               </form>
                           </div>
                           <!-- END LEAVE A REPLY SECTION -->
-                                                  <hr id="batassaran" class="style-three">
+                                                  
                           <!-- FIRST LEVEL -->
                                                   <!-- END FIRST LEVEL  -->
                       </div>
@@ -276,20 +276,20 @@
                       <nav class="text-center">
                                               </nav>
                   </div>
-  
               </div><!-- SIDEBAR STUFF -->
-  <div class="col-md-4 padding-20">
+  <div class="col-md-4 padding-20" data-aos="fade-left">
       <!-- ARTICLE CATEGORIES SECTION -->
+      <br>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Saya sudah mendaftar, tapi kenapa belum bisa login?
+              Apakah yang dimaksud dengan Pemantauan SPBE?
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Untuk pendaftaran pengguna, silahkan mengisi formulir pendaftaran, kemudian menghubungi admin untuk verifikasi dan aktivasi
+              Pemantauan SPBE adalah proses penilaian secara sistematis melalui verifikasi informasi terhadap hasil Penilaian Mandiri untuk mengukur tingkat kematangan penerapan SPBE
             </div>
           </div>
         </div>
@@ -308,12 +308,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Saya ingin ikut berdiskusi membahas artikel, bagaimana caranya?
+             Saya ingin ikut berdiskusi membahas artikel, bagaimana caranya?
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Silahkan mendaftar terlebih dahulu, jika sudah silahkan login untuk ikut berdiskusi.
+              Jika anda ingin berdiskusi membahas artikel, silahkan isi form saran&kritik terlebih dahulu
             </div>
           </div>
         </div>
@@ -338,28 +338,59 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="d-flex justify-content-center">
-          <div class="d-flex justify-content-center">
+        <div class="align-content-md-center">
             <div class="footer-info">
-              <img src="images/logo.png" alt="Logo Kota Bogor" style="width:75px;height:100px;padding-bottom: 10px;">
               &nbsp
-              <h3 class="text-blue">
-                Kota Bogor
-              </h3>
-              <p>
-                Jl. Ir. H. Juanda No.10, <br>
-                RT.01/RW.01, Pabaton, Kecamatan Bogor Tengah, <br> 
-                Kota Bogor<br>
-                <strong>Telepon:</strong> +62 251 - 8321075<br>
-                <strong>Email:</strong> help@kotabogor.com<br>
-              </p>
+              <div class="row py-10 py-lg-20">
+                <div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+                  <div class="rounded landing-dark-border p-1 mb-10">
+                    <h2 class="text-white page_speed_47478671">
+                      <div class="symbol symbol-square symbol-70px me-5">
+                        <img src="images/logo.png" class="" alt="" style="width:75px;height:100px;padding-bottom: 10px;"> Kota Bogor
+                      </div> 
+                    </h2>
+                    <span class="fw-normal fs-7 text-white">Jl. Ir. H. Juanda No.10, RT.01/RW.01, Pabaton, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16121</span><br>
+                    <span class="fw-normal fs-7 text-white">Telp. 0251-8321075</span>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6 ps-lg-16">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-column me-20 page_speed_494895017">
+                      <h6 class="text-white mb-2"> <strong>Sumber Data Lain</strong></h6>
+                      <a href="https://kotabogor.go.id/" class="mb-1">
+                        <div class="text-white opacity-70 text-hover-white fs-6 mb-6">Pemerintah Kota Bogor</div>
+                      </a>
+                      <a href="https://satudata.jabarprov.go.id" class="mb-1">
+                        <div class="text-white opacity-70 text-hover-white fs-6 mb-6">Satu Data Jabar</div>
+                      </a>
+                      <a href="https://data.go.id" class="mb-1">
+                        <div class="text-white opacity-70 text-hover-white fs-6 mb-6">Satu Data Indonesia</div>
+                      </a>
+                    </div>
+                    <div class="d-flex flex-column ms-lg-20 page_speed_494895017">
+                      <h6 class="text-white mb-2"> <strong>Tetap Terhubung</strong></h6>
+                      <a href="https://www.facebook.com/PemerintahKotaBogor/" class="mb-1">
+                        <di class="text-white opacity-70 text-hover-white fs-6 mb-6">Facebook</di>
+                      </a>
+                      <a href="https://www.instagram.com/pemkotbogor/" class="mb-4">
+                        <span class="text-white opacity-70 text-hover-white fs-6 mb-6">Instagram</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    <br>
+    <br>
     <div class="footer copyright">
-      <p>Copyright © 2023 Dinas Kominfo Kota Bogor</p>
+      <p> <strong> © 2023 - Diskominfo Kota Bogor</strong></p>
     </div>
   </footer>
   <!-- End Footer -->
